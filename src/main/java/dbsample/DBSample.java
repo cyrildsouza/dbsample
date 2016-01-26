@@ -49,6 +49,8 @@ public class DBSample {
         }
             conn.close();
         } catch (SQLException ex) {
+            
+            System.out.println(ex.getMessage());
             Logger.getLogger(DBSample.class.getName()).log(Level.SEVERE, null, ex);
         }
         
